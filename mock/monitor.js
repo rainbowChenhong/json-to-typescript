@@ -1,11 +1,3 @@
-/*
- * @Description:
- * @version: 1.0.0
- * @Author: chenhong
- * @Date: 2022-06-14 16:09:46
- * @LastEditors: chenhong
- * @LastEditTime: 2022-06-16 12:24:49
- */
 module.exports = {
   "GET /api/v1/wlpaas/monitor/log/debug/query": {
     request: {
@@ -30,7 +22,49 @@ module.exports = {
     },
   },
 
-  "GET /api/v1/wlpaas/component/connector/manage/list": {
+  "POST /api/v1/wlpaas/component/connector/manage/list": {
+    request: {
+      connectorType: 1,
+      pageNo: 1,
+      pageSize: 2,
+    },
+    response: {
+      totalCount: 1,
+      pageNo: 1,
+      pageSize: 10,
+      data: [
+        {
+          id: 0,
+          tenantId: 1,
+          name: "HttpListener",
+          tag: 0,
+          describes: "",
+        },
+      ],
+    },
+  },
+  "DELETE /api/v1/wlpaas/component/connector/manage/list": {
+    request: {
+      connectorType: 1,
+      pageNo: 1,
+      pageSize: 2,
+    },
+    response: {
+      totalCount: 1,
+      pageNo: 1,
+      pageSize: 10,
+      data: [
+        {
+          id: 0,
+          tenantId: 1,
+          name: "HttpListener",
+          tag: 0,
+          describes: "",
+        },
+      ],
+    },
+  },
+  "PUT /api/v1/wlpaas/component/connector/manage/list": {
     request: {
       connectorType: 1,
       pageNo: 1,
