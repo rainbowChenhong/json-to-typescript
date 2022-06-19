@@ -1,5 +1,5 @@
 module.exports = {
-  "GET /api/v1/wlpaas/monitor/log/debug/query": {
+  "GET /api/v1/wlpaas/monitor/log/debug/{appid}/query": {
     request: {
       nodeId: 0,
       debugId: 1,

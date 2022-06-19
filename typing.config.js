@@ -1,5 +1,5 @@
 module.exports = {
   outPutDir: "./typings",
   inPutDir: "./mock",
-  apiImportModle: "import * from request.ts",
+  apiImportMoudle: "import * as net from request.ts",
 };
